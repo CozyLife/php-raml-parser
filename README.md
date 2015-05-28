@@ -2,11 +2,12 @@
 
 Parses a RAML file into a PHP object.
 
-[![Build Status](https://travis-ci.org/alecsammon/php-raml-parser.svg?branch=master)](https://travis-ci.org/alecsammon/php-raml-parser)
-[![Coverage Status](https://img.shields.io/coveralls/alecsammon/php-raml-parser.svg)](https://coveralls.io/r/alecsammon/php-raml-parser?branch=master)
-[![HHVM Status](http://hhvm.h4cc.de/badge/alecsammon/php-raml-parser.png)](http://hhvm.h4cc.de/package/alecsammon/php-raml-parser)
-
 See the RAML spec here: https://github.com/raml-org/raml-spec
+
+# Differences in this fork
+The [original release](https://github.com/alecsammon/php-raml-parser) of PHP RAML Parser merges the call data for each security call with the main request. That causes unnecessary overhead when, for example, requesting OAuth tokens, and can create unintended side-effects. This fork remedies that issue by keeping all calls independent.
+
+See more about why [this change](https://github.com/alecsammon/php-raml-parser/pull/70#issuecomment-100929712) is critical when making calls based on an API modeling language.
 
 ### Get started
 Requires:
