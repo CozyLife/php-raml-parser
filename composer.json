@@ -1,14 +1,18 @@
 {
-  "name": "alecsammon/php-raml-parser",
+  "name": "cozylife/php-raml-parser",
   "type": "library",
   "description": "A RAML parser built in php",
-  "homepage": "https://github.com/alecsammon/php-raml-parser",
+  "homepage": "https://github.com/cozylife/php-raml-parser",
   "license": "MIT",
 
   "authors": [
     {
       "name": "Alec Sammon",
       "email": "alec.sammon@googlemail.com"
+    },
+    {
+      "name": "Rick Mac Gillis",
+      "email": "rick.macgillis@rickmacgillis.com"
     }
   ],
 
@@ -21,7 +25,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/alecsammon/json-schema.git"
+      "url": "https://github.com/justinrainbow/json-schema.git"
     }
   ],
 
@@ -32,7 +36,7 @@
   },
 
   "require": {
-    "alecsammon/json-schema": "@dev",
+    "justinrainbow/json-schema": "@dev",
     "symfony/yaml": "~2.5",
     "symfony/routing": "~2.5",
     "oodle/inflect": "0.2.0"
